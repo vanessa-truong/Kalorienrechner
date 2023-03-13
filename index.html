@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien_Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Kalorien rechner</h1>
+        <form action="" onsubmit="return false">
+            <h2>Körpergröße</h2>
+            <input type="number" name="" id="größe">
+            <h2>Alter</h2>
+            <input type="number" name="" id="alter">
+            <h2>Gewicht</h2>
+            <input type="number" name="" id="gewicht">
+            <h2>Körperbau</h2>
+            <label for="">weiblich</label>
+            <input type="radio" name="geschlecht" id="weiblich" onchange="change()">
+            <label for="">männlich</label>
+            <input type="radio" name="geschlecht" id="männlich" onchange="change()">
+            <h2>Arbeits- und Freizeitaktivität</h2>
+            <select name="PALWert" id="PALWert">
+                <option value="0">Schlafen</option>
+                <option value="1">Nur Sitzen oder Liegen</option>
+                <option value="2">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körüerlichen Aktivität in der
+                    Freizeit z.B. Büroarbeit</option>
+                <option value="3">Überwiegend gehende poder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                    Mchaniker, Hausfrauen</option>
+                <option value="4">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <div>
+                <input type="button" value="submit" onclick="check()" class="submit">
+            </div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>kcal</th>
+                    <th>kJ</th>
+                </tr>
+                <tr>
+                    <td>Grundumsatz:</td>
+                    <td id="resultGrundumsatz"></td>
+                    <td id="resultKJ"></td>
+                </tr>
+                <tr>
+                    <td>Gesamtumsatz:</td>
+                    <td id="resultGesamtumsatz"></td>
+                    <td id="resultTotalKJ"></td>
+            </table>
+        </form>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
