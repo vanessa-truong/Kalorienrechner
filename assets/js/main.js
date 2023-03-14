@@ -29,75 +29,75 @@ const change = () => {
 
 const check = () => {
     if (weiblich.checked) {
-        resultGrundumsatz.innerHTML = grundumsatz.toFixed(3).concat("kcal");
+        resultGrundumsatz.innerHTML = grundumsatz.toFixed(2).concat("kcal");
         kiloJoule = grundumsatz * 4.184;
         resultKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ");
         if (PALWert.value == "0") {
             gesamtumsatz = grundumsatz * 0.95;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat(" ").concat("kcal");
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat(" ").concat("kcal");
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "1") {
             gesamtumsatz = grundumsatz * 1.2;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "2") {
             gesamtumsatz = grundumsatz * 1.5;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "3") {
             gesamtumsatz = grundumsatz * 1.7;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "4") {
             gesamtumsatz = grundumsatz * 1.9;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else {
             gesamtumsatz = grundumsatz * 2.2;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal");
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal");
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         }
     }
     else {
-        resultGrundumsatz.innerHTML = grundumsatz.toFixed(3).concat(" ").concat("kcal");
+        resultGrundumsatz.innerHTML = grundumsatz.toFixed(2).concat(" ").concat("kcal");
         kiloJoule = grundumsatz * 4.184;
-        resultKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ");
+        resultKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ");
         if (PALWert.value == "0") {
             gesamtumsatz = grundumsatz * 0.95;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "1") {
             gesamtumsatz = grundumsatz * 1.2;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "2") {
             gesamtumsatz = grundumsatz * 1.5;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "3") {
             gesamtumsatz = grundumsatz * 1.7;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else if (PALWert.value == "4") {
             gesamtumsatz = grundumsatz * 1.9;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal")
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal")
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         } else {
             gesamtumsatz = grundumsatz * 2.2;
-            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(3).concat("kcal");
+            resultGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2).concat("kcal");
             kiloJoule = gesamtumsatz * 4.184;
-            resultTotalKJ.innerHTML = kiloJoule.toFixed(3).concat(" KJ")
+            resultTotalKJ.innerHTML = kiloJoule.toFixed(2).concat(" KJ")
         }
     }
 }

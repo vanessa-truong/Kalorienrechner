@@ -42,13 +42,25 @@ section {
 section form select {
     width: 70%;
     margin-top: 2vh;
+    padding: 5px;
+
 }
 
 section form table {
     color: white;
     display: flex;
     justify-content: space-between;
+    border: 3px solid rgb(50, 73, 102);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(59, 83, 107, 0.726);
 
+}
+
+section form table td {
+    border: 1px solid rgb(25, 37, 51);
+    width: 120px;
+    padding: 5px;
 }
 
 .submit {
